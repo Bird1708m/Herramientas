@@ -31,7 +31,7 @@
 	display: flex;
     flex-flow: row nowrap;
     background-color: #00BFA6;
-	height: 4.8vw;
+    height: 4.8vw;
     width: 100%;
     margin-top: -4.8vw;
     z-index: 500;
@@ -361,13 +361,13 @@
     }
     
     .menu li {
-        padding: .8em 1.3em;
+        padding: .8em 1.1em;
         width: 100%;
     }
 
     .logo a {
         font-size: 1.5em;
-        margin-left: .5em;
+        margin-left: .4em;
         width: 100%;
     }
 
