@@ -82,7 +82,7 @@
         font-size: 1.2vw;
         font-family: 'Montserrat', sans-serif;
         width: 24vw;
-        height: 42.5vw;
+        height: 100vh;
 		margin-top: 4.8vw;
 		transform: translateX(-100%);
         transition: all .3s;
