@@ -27,12 +27,14 @@
 /*Header*/
 
 .barra {
-    position: relative;
+    position: fixed;
 	display: flex;
     flex-flow: row nowrap;
     background-color: #00BFA6;
 	height: 4.8vw;
-	width: 100%;
+    width: 100%;
+    margin-top: -4.8vw;
+    z-index: 500;
 }
 
 	.logo {
@@ -50,7 +52,7 @@
 			color: #ffffff;
 			padding: 0 2vw;
 			font-size: 1.7vw;
-		}
+        }
 
     #btn-menu {
         display: none;
@@ -76,12 +78,11 @@
 		flex-flow: column nowrap;
 		align-items: flex-start;
 		position: absolute;
-        background-color: #036356;
+        background-color: #048573;
         font-size: 1.2vw;
         font-family: 'Montserrat', sans-serif;
         width: 24vw;
         height: 42.5vw;
-        padding-top: 1.3vw;
 		margin-top: 4.8vw;
 		transform: translateX(-100%);
         transition: all .3s;
@@ -99,7 +100,12 @@
             .menu li {
                 display: flex;
                 align-items: center;
-                padding: 1.3vw 2.6vw;
+                width: 24vw;
+                padding: 1.5vw 2.6vw;
+            }
+
+            .menu li:hover {
+                background-color: #036356;
             }
 
                 .menu li a {
@@ -122,6 +128,7 @@
         flex-flow: row nowrap;
         align-items: center;
         justify-content: center;
+        margin-top: 4.8vw;
     }
 
         .main1 p{
@@ -129,12 +136,17 @@
             text-align: center;
             width: 70%;
             padding: 1em 1em;
+            margin-left: 1.5vw;
             font-family: 'Julius Sans One', sans-serif;
             font-size: 2.1vw;
             line-height: 3vw;
             letter-spacing: .1em;
             color: #222222;
             z-index: 100;
+        }
+
+        .main1 .imgBx img {
+            width: 70vw;
         }
 
         .main1 .imgBx:before {
@@ -319,7 +331,9 @@
 
 @media (max-width: 500px) {	  
     .barra {
+        position: relative;
         height: 4em;
+        margin-top: 0;
     }
 
     .menu {
@@ -327,16 +341,18 @@
         height: 18em;
         margin-top: 4em;
         padding-top: .6em;
-        font-size: 1em; 
-    } 
+        font-size: 1em;
+    }
     
     .menu li {
         padding: .8em 1.3em;
+        width: 100%;
     }
 
     .logo a {
         font-size: 1.5em;
         margin-left: .6em;
+        width: 100%;
     }
 
     .icon-menu img {
@@ -348,12 +364,17 @@
     .main1 {
         flex-flow: column-reverse nowrap;
         background-color: #9999997a;
+        margin-top: 0;
     }
 
     .main1 p {
         font-size: 1.25em;
         line-height: 1.3em;
         padding: 1em 0;
+    }
+
+    .main1 .imgBx img {
+        width: 100vw;
     }
 
     .main1 .imgBx:before {
